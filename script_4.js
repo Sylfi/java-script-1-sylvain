@@ -24,9 +24,40 @@ const entrepreneurs = [
 });
 
 
+
+//Liste des gens nés dans les 70s
+console.log("La liste des gens nés dans les 70s :")
+console.log(seventies)
+
+//Liste des noms et prénoms
+console.log("voici la liste des gens : ")
 entrepreneurs.forEach(people => {
     console.log(people.first + " "+ people.last)
 });
+console.log("et tout ça dans un joli array :) : ")
+array =[]
+for (let people in entrepreneurs) {
+  array.push(entrepreneurs[people].first + " " + entrepreneurs[people].last)
+  }
+  console.log(array)
 
-console.log("La liste des gens nés dans les 70s :")
-console.log(seventies)
+  //Age des entrepreneurs aujourd'hui
+  entrepreneurs.forEach(people => {
+      console.log("Cette année " + people.first + " " + people.last +
+                " a ou aurait eu" + (2019 - people.year) + " ans")})
+
+// Liste par ordre alphabétique
+// Mais comment le faire sans mettre le nom en premier ? 
+array = [ ]
+for (let people in entrepreneurs) {
+    array.push(entrepreneurs[people].last + " " + entrepreneurs[people].first)
+}
+console.log("Et voici la liste de nos gentils petits enfoirés par ordre alphabétique : ")
+console.log(array.sort(x))
+
+
+
+
+
+
+
