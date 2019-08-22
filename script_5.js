@@ -32,7 +32,7 @@ if (array.every(ispositive))
 // Trouver le livre le plus emprunté
 console.log("-".repeat(repeatNum))
 console.log("2. Quel est livre le plus emprunté ?")
-console.log("-".repeat(repeatNum))
+
 
   
   let n = 0
@@ -41,8 +41,36 @@ for (let index in books) {
 
   if (books[index].rented > n) {
     n = books[index].rented
-    u = books[index]
+    u = books[index].title
   }
 }
 
 console.log(u)
+console.log("-".repeat(repeatNum))
+// trouver le livre avec l'ID 873495
+
+for (let index in books) {
+    if (books[index].id == 873495){
+        u= books[index].title}
+    }
+
+console.log("Le livre N. 873495 a pour titre : ")
+ console.log(u)
+
+ console.log("-".repeat(repeatNum))
+
+ //Supprimer le livre avec l'ID: 133712
+
+ for (let index in books) {
+
+    if (books[index].id ==  133712) {
+        delete books[index]}
+    }
+    console.log("comme on peut le voir, Gatsby le magnifique (#133712) a été supprimé de la base de données : ")
+    console.log(books)
+
+    console.log("-".repeat(repeatNum))
+    
+    //
+
+
