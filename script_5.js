@@ -30,6 +30,19 @@ if (array.every(ispositive))
     console.log("- ".repeat(repeatNum));
 
 // Trouver le livre le plus emprunté
+console.log("-".repeat(repeatNum))
+console.log("2. Quel est livre le plus emprunté ?")
+console.log("-".repeat(repeatNum))
 
-    function bookest(arr)
-        for (let 
+  
+  let n = 0
+
+for (let index in books) {
+
+  if (books[index].rented > n) {
+    n = books[index].rented
+    u = books[index]
+  }
+}
+
+console.log(u)
