@@ -47,6 +47,26 @@ for (let index in books) {
 
 console.log(u)
 console.log("-".repeat(repeatNum))
+
+//le livre le moins emprunté
+
+// Exercice 3
+console.log("-".repeat(repeatNum))
+console.log("3. Quel est le livre le moins emprunté ?")
+console.log("-".repeat(repeatNum))
+
+for (let index in books) {
+
+if (books[index].rented < n) {
+  n = books[index].rented
+  u = books[index]
+}
+}
+
+console.log(u)
+
+
+
 // trouver le livre avec l'ID 873495
 
 for (let index in books) {
